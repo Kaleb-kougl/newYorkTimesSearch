@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
+    <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>New York Times</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="/index.js"></script>
   <script src="main.js"></script>
 </head>
 <body>
-  <div class="card w-75">
-      <div class="card-header">
-          Search Parameters
-      </div>
-    <form class="card-body">
-      <div class="form-group">
-        <label for="searchTerm">Search Term:</label>
-        <input type="text" class="form-control" id="searchTerm" aria-describedby="emailHelp" placeholder="Search Terms">
-      </div>
-      <div class="form-group">
-        <label for="numberOfRecords">Number of Records to Retrieve</label>
-        <input type="number" class="form-control" id="numberOfRecords" placeholder="#">
-      </div>
-      <div class="form-group">
-        <label for="startYear">Start Year (Optional):</label>
-        <input type="number" class="form-control" id="startYear" placeholder="Start year">
-      </div>
-      <div class="form-group">
-        <label for="endYear">End Year (Optional):</label>
-        <input type="number" class="form-control" id="endYear" placeholder="End year">
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+  <form>
+        <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                        <i class="fas fa-newspaper"></i>
+                  <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                  New York Times Search
+                </a>
+              </nav>
+    <div class="form-group">
+      <label for="searchTerm">Search Term:</label>
+      <input type="text" class="form-control" id="searchTerm" aria-describedby="emailHelp" placeholder="Search Terms">
+    </div>
+    <div class="form-group">
+      <label for="numberOfRecords">Number of Records to Retrieve</label>
+      <input type="number" class="form-control" id="numberOfRecords" placeholder="#">
+    </div>
+    <div class="form-group">
+      <label for="startYear">Start Year (Optional):</label>
+      <input type="number" class="form-control" id="startYear" placeholder="Start year">
+    </div>
+    <div class="form-group">
+      <label for="endYear">End Year (Optional):</label>
+      <input type="number" class="form-control" id="endYear" placeholder="End year">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
 <!-- NECESSARY BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
